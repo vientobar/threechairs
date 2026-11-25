@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three Chairs · Zagreb · Opening soon</title>
+  <meta name="description" content="Three Chairs — coffee, matcha and cocktails in Zagreb. Opening soon.">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --beige: #EFE6D6;
+      --beige-dark: #E4D7C1;
+      --terracotta: #C2643C;
+      --olive: #6B7042;
+      --ink: #4A3020;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      background: var(--beige);
+      color: var(--olive);
+      font-family: "Jost", system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .logo {
+      width: min(380px, 78vw);
+      height: auto;
+      margin-bottom: 40px;
+    }
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .divider span {
+      width: 48px;
+      height: 1px;
+      background: var(--olive);
+      opacity: .5;
+    }
+    .divider i {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--terracotta);
+    }
+    h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: clamp(2.4rem, 7vw, 3.6rem);
+      color: var(--terracotta);
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+    .tagline {
+      font-size: .82rem;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      margin-bottom: 44px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .links a {
+      color: var(--olive);
+      text-decoration: none;
+      font-size: .95rem;
+      padding: 10px 22px;
+      border: 1px solid var(--olive);
+      border-radius: 999px;
+      transition: background .2s, color .2s, border-color .2s;
+    }
+    .links a:hover {
+      background: var(--terracotta);
+      border-color: var(--terracotta);
+      color: var(--beige);
+    }
+    @media (max-width: 480px) {
+      .tagline { font-size: .7rem; letter-spacing: .16em; }
+    }
+    footer {
+      margin-top: 56px;
+      font-size: .75rem;
+      letter-spacing: .12em;
+      opacity: .7;
+    }
+  </style>
+</head>
+<body>
+  <img class="logo" src="logo.png" alt="Three Chairs logo — a stool and two chairs">
+
+  <div class="divider"><span></span><i></i><span></span></div>
+
+  <h1>Opening soon</h1>
+  <p class="tagline">Coffee · Matcha · Cocktails</p>
+
+  <div class="links">
+    <a href="https://instagram.com/threechairs.zagreb" target="_blank" rel="noopener">@threechairs.zagreb</a>
+    <a href="mailto:hello@threechairs.eu">hello@threechairs.eu</a>
+  </div>
+
+  <footer>ZAGREB</footer>
+</body>
+</html>
